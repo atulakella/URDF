@@ -1,0 +1,41 @@
+[0.440s] Invoking command in '/home/debian/delta/build/delta': PYTHONPATH=/home/debian/delta/build/delta/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/debian/delta/install/delta/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/debian/delta/build/delta/build --no-deps symlink_data
+[0.620s] running develop
+[0.620s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.621s]   warnings.warn(
+[0.733s] running egg_info
+[0.733s] creating delta.egg-info
+[0.733s] writing delta.egg-info/PKG-INFO
+[0.733s] writing dependency_links to delta.egg-info/dependency_links.txt
+[0.733s] writing entry points to delta.egg-info/entry_points.txt
+[0.733s] writing requirements to delta.egg-info/requires.txt
+[0.733s] writing top-level names to delta.egg-info/top_level.txt
+[0.733s] writing manifest file 'delta.egg-info/SOURCES.txt'
+[0.734s] reading manifest file 'delta.egg-info/SOURCES.txt'
+[0.734s] writing manifest file 'delta.egg-info/SOURCES.txt'
+[0.735s] running build_ext
+[0.735s] Creating /home/debian/delta/install/delta/lib/python3.10/site-packages/delta.egg-link (link to .)
+[0.736s] 
+[0.736s] Installed /home/debian/delta/build/delta
+[0.736s] running symlink_data
+[0.736s] creating /home/debian/delta/install/delta/share/ament_index
+[0.736s] creating /home/debian/delta/install/delta/share/ament_index/resource_index
+[0.736s] creating /home/debian/delta/install/delta/share/ament_index/resource_index/packages
+[0.736s] symbolically linking /home/debian/delta/build/delta/resource/delta -> /home/debian/delta/install/delta/share/ament_index/resource_index/packages
+[0.736s] symbolically linking /home/debian/delta/build/delta/package.xml -> /home/debian/delta/install/delta/share/delta
+[0.737s] symbolically linking /home/debian/delta/build/delta/launch/view_robot_launch.py -> /home/debian/delta/install/delta/share/delta
+[0.737s] creating /home/debian/delta/install/delta/share/delta/urdf
+[0.737s] symbolically linking /home/debian/delta/build/delta/urdf/planar_3dof.urdf -> /home/debian/delta/install/delta/share/delta/urdf/
+[0.737s] creating /home/debian/delta/install/delta/share/delta/rviz
+[0.737s] symbolically linking /home/debian/delta/build/delta/rviz/view.rviz -> /home/debian/delta/install/delta/share/delta/rviz/
+[0.737s] creating /home/debian/delta/install/delta/share/delta/meshes
+[0.737s] creating /home/debian/delta/install/delta/share/delta/meshes/collision
+[0.737s] symbolically linking /home/debian/delta/build/delta/meshes/collision/arm_link.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.737s] symbolically linking /home/debian/delta/build/delta/meshes/collision/arm_link_twist_2.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.737s] symbolically linking /home/debian/delta/build/delta/meshes/collision/gripper.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.737s] symbolically linking /home/debian/delta/build/delta/meshes/collision/arm_link_twist_1.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.737s] creating /home/debian/delta/install/delta/share/delta/meshes/visual
+[0.737s] symbolically linking /home/debian/delta/build/delta/meshes/visual/arm_link.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.737s] symbolically linking /home/debian/delta/build/delta/meshes/visual/arm_link_twist_2.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.737s] symbolically linking /home/debian/delta/build/delta/meshes/visual/gripper.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.737s] symbolically linking /home/debian/delta/build/delta/meshes/visual/arm_link_twist_1.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.756s] Invoked command in '/home/debian/delta/build/delta' returned '0': PYTHONPATH=/home/debian/delta/build/delta/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/debian/delta/install/delta/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/debian/delta/build/delta/build --no-deps symlink_data

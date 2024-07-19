@@ -1,0 +1,1 @@
+/home/debian/URDF_for_delta/launch/view_robot_launch.py

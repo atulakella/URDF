@@ -1,0 +1,102 @@
+[0.424s] Invoking command in '/home/debian/delta/build/delta': PYTHONPATH=/home/debian/delta/build/delta/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/debian/delta/install/delta/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/debian/delta/build/delta/build --no-deps symlink_data
+[0.605s] running develop
+[0.605s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.605s]   warnings.warn(
+[0.718s] running egg_info
+[0.719s] writing delta.egg-info/PKG-INFO
+[0.719s] writing dependency_links to delta.egg-info/dependency_links.txt
+[0.719s] writing entry points to delta.egg-info/entry_points.txt
+[0.719s] writing requirements to delta.egg-info/requires.txt
+[0.719s] writing top-level names to delta.egg-info/top_level.txt
+[0.721s] reading manifest file 'delta.egg-info/SOURCES.txt'
+[0.722s] writing manifest file 'delta.egg-info/SOURCES.txt'
+[0.723s] running build_ext
+[0.723s] Creating /home/debian/delta/install/delta/lib/python3.10/site-packages/delta.egg-link (link to .)
+[0.724s] 
+[0.724s] Installed /home/debian/delta/build/delta
+[0.724s] running symlink_data
+[0.724s] symbolically linking /home/debian/delta/build/delta/meshes/collision/foot_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.724s] symbolically linking /home/debian/delta/build/delta/meshes/collision/rib_cage_middle_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.724s] symbolically linking /home/debian/delta/build/delta/meshes/collision/rib_cage_middle_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.724s] symbolically linking /home/debian/delta/build/delta/meshes/collision/palm_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.724s] symbolically linking /home/debian/delta/build/delta/meshes/collision/finger_proximal_upper.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.724s] symbolically linking /home/debian/delta/build/delta/meshes/collision/calf.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.724s] symbolically linking /home/debian/delta/build/delta/meshes/collision/hand_back_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.724s] symbolically linking /home/debian/delta/build/delta/meshes/collision/hip_upper_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.724s] symbolically linking /home/debian/delta/build/delta/meshes/collision/shoulder_vertical_bracket_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/hinge_joint.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/ellbow_servo_scaffold.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/lower_arm.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/hip_rotator.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/upper_arm.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/ellbow_joint_upper.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/palm_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/head_base.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/shoulder_vertical_bracket_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/lower_thigh.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/neck.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/hand_back_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/foot_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/thumb_middle.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.725s] symbolically linking /home/debian/delta/build/delta/meshes/collision/shoulder_axis_connector_nut.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/pelvis_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/finger_proximal_lower.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/thumb_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/clavicle_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/hip_lateral_rotator.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/rib_cage_bottom.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/finger_distal.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/finger_tip.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/clavicle_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/hip_upper_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/pelvis_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/distal_lower_arm.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/shoulder_axis_connector_screw.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/flexion_connector.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.726s] symbolically linking /home/debian/delta/build/delta/meshes/collision/higher_thigh.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/collision/face.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/collision/upper_arm_ellbow.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/collision/thumb_connector.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/visual/foot_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/visual/rib_cage_middle_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/visual/rib_cage_middle_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/visual/palm_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/visual/finger_proximal_upper.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/visual/calf.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/visual/hand_back_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/visual/hip_upper_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/visual/shoulder_vertical_bracket_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.727s] symbolically linking /home/debian/delta/build/delta/meshes/visual/hinge_joint.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/ellbow_servo_scaffold.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/lower_arm.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/hip_rotator.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/upper_arm.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/ellbow_joint_upper.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/palm_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/head_base.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/shoulder_vertical_bracket_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/lower_thigh.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/neck.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/hand_back_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/foot_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.728s] symbolically linking /home/debian/delta/build/delta/meshes/visual/thumb_middle.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/shoulder_axis_connector_nut.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/pelvis_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/finger_proximal_lower.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/thumb_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/clavicle_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/hip_lateral_rotator.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/rib_cage_bottom.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/finger_distal.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/finger_tip.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/clavicle_right.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/hip_upper_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/pelvis_left.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/distal_lower_arm.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/shoulder_axis_connector_screw.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/flexion_connector.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.729s] symbolically linking /home/debian/delta/build/delta/meshes/visual/higher_thigh.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.730s] symbolically linking /home/debian/delta/build/delta/meshes/visual/face.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.730s] symbolically linking /home/debian/delta/build/delta/meshes/visual/upper_arm_ellbow.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.730s] symbolically linking /home/debian/delta/build/delta/meshes/visual/thumb_connector.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+[0.749s] Invoked command in '/home/debian/delta/build/delta' returned '0': PYTHONPATH=/home/debian/delta/build/delta/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/debian/delta/install/delta/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/debian/delta/build/delta/build --no-deps symlink_data

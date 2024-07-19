@@ -1,0 +1,14 @@
+running develop
+running egg_info
+writing delta.egg-info/PKG-INFO
+writing dependency_links to delta.egg-info/dependency_links.txt
+writing entry points to delta.egg-info/entry_points.txt
+writing requirements to delta.egg-info/requires.txt
+writing top-level names to delta.egg-info/top_level.txt
+reading manifest file 'delta.egg-info/SOURCES.txt'
+writing manifest file 'delta.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/debian/delta/install/delta/lib/python3.10/site-packages/delta.egg-link (link to .)
+
+Installed /home/debian/delta/build/delta
+running symlink_data

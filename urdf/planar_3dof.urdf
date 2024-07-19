@@ -1,0 +1,2225 @@
+<?xml version="1.0"?>
+<robot name="planar_3dof" xmlns:xacro="http://ros.org/wiki/xacro">
+	<material name="red">
+		<color rgba="0.8 0.0 0.0 1.0" />
+	</material>
+	<material name="grey">
+		<color rgba="0.4 0.4 0.4 1.0" />
+	</material>
+	<link name="base_link" />
+	<link name="rib_cage_bottom">
+		<visual>
+			<origin xyz="-0.00012532 -0.000673947 0.43501" rpy="3.14159 6.88206e-15 -3.14159" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/rib_cage_bottom.stl" />
+			</geometry>
+			<material name="rib_cage_bottom_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for rib_cage_bottom -->
+		<inertial>
+			<origin xyz="0.0761225 -0.00151574 0.187774" rpy="0 0 0" />
+			<mass value="0.144338" />
+			<inertia ixx="0.000339928" ixy="-9.26385e-06" ixz="4.9177e-05" iyy="0.000336177" iyz="-2.41379e-06" izz="0.000504981" />
+		</inertial>
+	</link>
+	<link name="rib_cage_bottom_2">
+		<visual>
+			<origin xyz="0.0049998 0.232 0.0499999" rpy="1.5708 -1.09455e-09 7.88861e-31" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/rib_cage_bottom.stl" />
+			</geometry>
+			<material name="rib_cage_bottom_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for rib_cage_bottom_2 -->
+		<inertial>
+			<origin xyz="-0.071248 -0.0152354 0.0491581" rpy="0 0 0" />
+			<mass value="0.144338" />
+			<inertia ixx="0.000339928" ixy="4.9177e-05" ixz="-9.26385e-06" iyy="0.000504981" iyz="-2.41379e-06" izz="0.000336177" />
+		</inertial>
+	</link>
+	<link name="rib_cage_middle_right">
+		<visual>
+			<origin xyz="-0.124047 -8.07856e-08 -0.228" rpy="0 -0 1.26085e-30" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/rib_cage_middle_right.stl" />
+			</geometry>
+			<material name="rib_cage_middle_right_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for rib_cage_middle_right -->
+		<inertial>
+			<origin xyz="-0.047567 -0.0085665 -0.0777293" rpy="0 0 0" />
+			<mass value="0.302538" />
+			<inertia ixx="0.00125329" ixy="1.65894e-05" ixz="-1.74081e-05" iyy="0.000957499" iyz="-3.03806e-05" izz="0.00132793" />
+		</inertial>
+	</link>
+	<link name="clavicle_right">
+		<visual>
+			<origin xyz="-0.121791 -0.0325964 -0.11" rpy="0 -0 1.26085e-30" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/clavicle_right.stl" />
+			</geometry>
+			<material name="clavicle_right_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for clavicle_right -->
+		<inertial>
+			<origin xyz="-0.0134729 -0.0428555 -0.0806338" rpy="0 0 0" />
+			<mass value="0.29493" />
+			<inertia ixx="0.00114163" ixy="-0.00018646" ixz="0.000139248" iyy="0.00123319" iyz="0.000115077" izz="0.00166234" />
+		</inertial>
+	</link>
+	<link name="clavicle_left">
+		<visual>
+			<origin xyz="-0.005 -0.004 -0.05" rpy="-1.5708 1.07238e-30 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/clavicle_left.stl" />
+			</geometry>
+			<material name="clavicle_left_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for clavicle_left -->
+		<inertial>
+			<origin xyz="-0.113333 0.0254653 -0.0394769" rpy="0 0 0" />
+			<mass value="0.295634" />
+			<inertia ixx="0.00113872" ixy="0.000136181" ixz="0.000195986" iyy="0.001656" iyz="-0.000113155" izz="0.00123878" />
+		</inertial>
+	</link>
+	<link name="shoulder_vertical_bracket_left">
+		<visual>
+			<origin xyz="-0.197139 0 -0.028" rpy="1.5708 -0 -5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/shoulder_vertical_bracket_left.stl" />
+			</geometry>
+			<material name="shoulder_vertical_bracket_left_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for shoulder_vertical_bracket_left -->
+		<inertial>
+			<origin xyz="-0.00816528 7.46481e-05 -0.0297393" rpy="0 0 0" />
+			<mass value="0.0270907" />
+			<inertia ixx="1.40884e-05" ixy="-4.454e-09" ixz="-3.94309e-07" iyy="6.84607e-06" iyz="-3.52054e-09" izz="1.14417e-05" />
+		</inertial>
+	</link>
+	<link name="shoulder_axis_connector_nut">
+		<visual>
+			<origin xyz="-0.0482299 -0.0725049 0.016" rpy="-3.14159 -1.15824e-17 -1.11022e-16" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/shoulder_axis_connector_nut.stl" />
+			</geometry>
+			<material name="shoulder_axis_connector_nut_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for shoulder_axis_connector_nut -->
+		<inertial>
+			<origin xyz="-0.000341447 5.15887e-17 0.00326229" rpy="0 0 0" />
+			<mass value="0.00519155" />
+			<inertia ixx="8.09966e-07" ixy="-1.86325e-15" ixz="3.14426e-08" iyy="8.07399e-07" iyz="-8.40193e-23" izz="9.12449e-08" />
+		</inertial>
+	</link>
+	<link name="shoulder_axis_connector_screw">
+		<visual>
+			<origin xyz="0.0725049 0.005 -0.02608" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/shoulder_axis_connector_screw.stl" />
+			</geometry>
+			<material name="shoulder_axis_connector_screw_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for shoulder_axis_connector_screw -->
+		<inertial>
+			<origin xyz="4.89331e-17 0.0175878 -0.000375935" rpy="0 0 0" />
+			<mass value="0.00523579" />
+			<inertia ixx="9.21279e-08" ixy="-3.46184e-08" ixz="2.14115e-22" iyy="8.24043e-07" iyz="-1.93446e-15" izz="8.22084e-07" />
+		</inertial>
+	</link>
+	<joint name="ConnectorScrewConnectorNutArmL_passive" type="fixed">
+		<origin xyz="5.55112e-17 -5.55112e-17 0.021" rpy="1.5708 1.03277e-16 -1.5708" />
+		<parent link="shoulder_axis_connector_nut" />
+		<child link="shoulder_axis_connector_screw" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="flexion_connector">
+		<visual>
+			<origin xyz="-0.0319499 -0.06265 0.122843" rpy="-3.14159 1.0472 2.22045e-16" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/flexion_connector.stl" />
+			</geometry>
+			<material name="flexion_connector_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for flexion_connector -->
+		<inertial>
+			<origin xyz="-0.0375001 -0.0432659 0.00413441" rpy="0 0 0" />
+			<mass value="0.0754048" />
+			<inertia ixx="6.0123e-05" ixy="-4.77452e-10" ixz="2.60832e-10" iyy="0.000116268" iyz="-5.41372e-07" izz="0.000107199" />
+		</inertial>
+	</link>
+	<link name="upper_arm">
+		<visual>
+			<origin xyz="-5.55112e-17 0 -0.095" rpy="5.55112e-17 -0 -2.77556e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/upper_arm.stl" />
+			</geometry>
+			<material name="upper_arm_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for upper_arm -->
+		<inertial>
+			<origin xyz="-1.61664e-16 9.86888e-17 -0.0475" rpy="0 0 0" />
+			<mass value="0.0332027" />
+			<inertia ixx="5.78502e-05" ixy="-1.12847e-36" ixz="-9.63399e-21" iyy="5.78502e-05" iyz="2.04464e-21" izz="6.5758e-05" />
+		</inertial>
+	</link>
+	<link name="upper_arm_ellbow">
+		<visual>
+			<origin xyz="-0.116145 -2.77556e-17 -0.0889006" rpy="-3.93972e-17 -0 5.19028e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/upper_arm_ellbow.stl" />
+			</geometry>
+			<material name="upper_arm_ellbow_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for upper_arm_ellbow -->
+		<inertial>
+			<origin xyz="6.82995e-10 -8.57488e-09 -0.0531732" rpy="0 0 0" />
+			<mass value="0.076739" />
+			<inertia ixx="0.000118927" ixy="-3.56891e-12" ixz="1.34681e-12" iyy="0.000119203" iyz="-9.73957e-12" izz="0.00014908" />
+		</inertial>
+	</link>
+	<link name="ellbow_joint_upper">
+		<visual>
+			<origin xyz="0.0225 -0.0505056 0.127046" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/ellbow_joint_upper.stl" />
+			</geometry>
+			<material name="ellbow_joint_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for ellbow_joint_upper -->
+		<inertial>
+			<origin xyz="0.00643117 0.0113907 0.0411063" rpy="0 0 0" />
+			<mass value="0.0547351" />
+			<inertia ixx="7.29011e-05" ixy="-8.79988e-12" ixz="3.79775e-06" iyy="2.70051e-05" iyz="1.38368e-11" izz="6.30635e-05" />
+		</inertial>
+	</link>
+	<link name="ellbow_servo_scaffold">
+		<visual>
+			<origin xyz="0.048 0.169164 0.0435163" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/ellbow_servo_scaffold.stl" />
+			</geometry>
+			<material name="ellbow_servo_scaffold_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for ellbow_servo_scaffold -->
+		<inertial>
+			<origin xyz="0.0268538 0.0129295 0.0324999" rpy="0 0 0" />
+			<mass value="0.0474164" />
+			<inertia ixx="6.5424e-05" ixy="1.10959e-10" ixz="2.96739e-06" iyy="2.39817e-05" iyz="-4.5116e-10" izz="6.03428e-05" />
+		</inertial>
+	</link>
+	<link name="lower_arm">
+		<visual>
+			<origin xyz="0.0253 -0.1775 0.17149" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/lower_arm.stl" />
+			</geometry>
+			<material name="lower_arm_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for lower_arm -->
+		<inertial>
+			<origin xyz="-0.0308985 -0.0113115 0.0414922" rpy="0 0 0" />
+			<mass value="0.104671" />
+			<inertia ixx="0.000153338" ixy="-9.81877e-10" ixz="1.026e-05" iyy="0.00014034" iyz="-7.11656e-10" izz="0.000208643" />
+		</inertial>
+	</link>
+	<link name="distal_lower_arm">
+		<visual>
+			<origin xyz="0.0579631 0.267 -0.135511" rpy="-1.03657e-16 5.55112e-17 -1.80818e-16" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/distal_lower_arm.stl" />
+			</geometry>
+			<material name="distal_lower_arm_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for distal_lower_arm -->
+		<inertial>
+			<origin xyz="3.73307e-08 0.000715172 -0.0866309" rpy="0 0 0" />
+			<mass value="0.092133" />
+			<inertia ixx="0.000244085" ixy="2.78114e-12" ixz="1.64573e-10" iyy="0.000246902" iyz="4.70715e-06" izz="0.000128285" />
+		</inertial>
+	</link>
+	<link name="hand_back_left">
+		<visual>
+			<origin xyz="0.0383655 -0.008 -0.0322257" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/hand_back_left.stl" />
+			</geometry>
+			<material name="hand_back_left_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0383655 -0.008 -0.0322257" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/hand_back_left.stl" />
+			</geometry>
+			<material name="hand_back_left_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00419213 -0.0356138 -0.0244992" rpy="0 0 0" />
+			<mass value="0.0728661" />
+			<inertia ixx="2.24162e-05" ixy="1.53666e-06" ixz="-6.87586e-07" iyy="3.50014e-05" iyz="-1.50494e-08" izz="5.44327e-05" />
+		</inertial>
+	</link>
+	<link name="palm_left">
+		<visual>
+			<origin xyz="-0.0105323 -0.0521282 -0.00736546" rpy="-1.5708 -4.16334e-17 -1.11022e-16" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/palm_left.stl" />
+			</geometry>
+			<material name="palm_left_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.0105323 -0.0521282 -0.00736546" rpy="-1.5708 -4.16334e-17 -1.11022e-16" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/palm_left.stl" />
+			</geometry>
+			<material name="palm_left_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-0.0186989 -0.0183926 -0.00780701" rpy="0 0 0" />
+			<mass value="0.107817" />
+			<inertia ixx="7.44385e-05" ixy="3.48772e-06" ixz="6.31778e-08" iyy="4.42093e-05" iyz="-5.90426e-07" izz="0.000113361" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_lower">
+		<visual>
+			<origin xyz="0.00336546 0.104 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.104 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00202829 -0.0134823 -0.00582573" rpy="0 0 0" />
+			<mass value="0.00462164" />
+			<inertia ixx="2.45101e-07" ixy="-8.64255e-10" ixz="-3.89998e-08" iyy="3.29333e-07" iyz="-1.44008e-09" izz="3.45872e-07" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_upper">
+		<visual>
+			<origin xyz="0 -2.77556e-17 0.148" rpy="-3.14159 -0 -9.54098e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 -2.77556e-17 0.148" rpy="-3.14159 -0 -9.54098e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="7.25689e-10 0.00103561 -0.0102571" rpy="0 0 0" />
+			<mass value="0.00496822" />
+			<inertia ixx="3.44348e-07" ixy="8.8931e-15" ixz="3.10323e-14" iyy="3.63867e-07" iyz="4.46039e-08" izz="2.62281e-07" />
+		</inertial>
+	</link>
+	<link name="finger_distal">
+		<visual>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00359073 -0.0226737 0.00599997" rpy="0 0 0" />
+			<mass value="0.00872858" />
+			<inertia ixx="5.67004e-07" ixy="1.07387e-12" ixz="-1.33534e-07" iyy="1.24609e-06" iyz="1.82919e-12" izz="1.26337e-06" />
+		</inertial>
+	</link>
+	<link name="finger_tip">
+		<visual>
+			<origin xyz="-5.55112e-17 -0.0428442 0.24278" rpy="-2.9341 -0 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-5.55112e-17 -0.0428442 0.24278" rpy="-2.9341 -0 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-1.77078e-08 -0.00110008 -0.00378255" rpy="0 0 0" />
+			<mass value="0.00255592" />
+			<inertia ixx="7.23719e-08" ixy="-3.56294e-13" ixz="-4.01041e-13" iyy="6.97088e-08" iyz="1.3178e-08" izz="1.04738e-07" />
+		</inertial>
+	</link>
+	<joint name="LittleDistal_passive" type="fixed">
+		<origin xyz="0.00645562 -0.0386782 0.006" rpy="-1.77829 1.5708 0" />
+		<parent link="finger_distal" />
+		<child link="finger_tip" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="LittlePipL" type="revolute">
+		<origin xyz="0.0059 0.00336546 -0.024" rpy="1.5708 1.11022e-16 -1.5708" />
+		<parent link="finger_proximal_upper" />
+		<child link="finger_distal" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="LittleProximalL_passive" type="fixed">
+		<origin xyz="0.00336546 -0.024 -0.0059" rpy="-1.5708 1.5708 0" />
+		<parent link="finger_proximal_lower" />
+		<child link="finger_proximal_upper" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="LittleMCL" type="revolute">
+		<origin xyz="-0.0643592 0.0125639 -0.004" rpy="1.5708 1.39737 -1.25664" />
+		<parent link="palm_left" />
+		<child link="finger_proximal_lower" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="finger_proximal_lower_2">
+		<visual>
+			<origin xyz="0.00336546 0.104 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.104 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00202829 -0.0134823 -0.00582573" rpy="0 0 0" />
+			<mass value="0.00462164" />
+			<inertia ixx="2.45101e-07" ixy="-8.64255e-10" ixz="-3.89998e-08" iyy="3.29333e-07" iyz="-1.44008e-09" izz="3.45872e-07" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_upper_2">
+		<visual>
+			<origin xyz="0 0 -0.148" rpy="0 -0 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 -0.148" rpy="0 -0 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="7.25689e-10 -0.00103561 0.0102571" rpy="0 0 0" />
+			<mass value="0.00496822" />
+			<inertia ixx="3.44348e-07" ixy="-8.8931e-15" ixz="-3.10323e-14" iyy="3.63867e-07" iyz="4.46039e-08" izz="2.62281e-07" />
+		</inertial>
+	</link>
+	<link name="finger_distal_2">
+		<visual>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00359073 -0.0226737 0.00599997" rpy="0 0 0" />
+			<mass value="0.00872858" />
+			<inertia ixx="5.67004e-07" ixy="1.07387e-12" ixz="-1.33534e-07" iyy="1.24609e-06" iyz="1.82919e-12" izz="1.26337e-06" />
+		</inertial>
+	</link>
+	<link name="finger_tip_2">
+		<visual>
+			<origin xyz="-1.11022e-16 -0.0428442 0.24278" rpy="-2.9341 -5.55112e-17 6.93889e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-1.11022e-16 -0.0428442 0.24278" rpy="-2.9341 -5.55112e-17 6.93889e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-1.77078e-08 -0.00110008 -0.00378255" rpy="0 0 0" />
+			<mass value="0.00255592" />
+			<inertia ixx="7.23719e-08" ixy="-3.56294e-13" ixz="-4.01041e-13" iyy="6.97088e-08" iyz="1.3178e-08" izz="1.04738e-07" />
+		</inertial>
+	</link>
+	<joint name="IndexDistalL_passive" type="fixed">
+		<origin xyz="0.00645562 -0.0386782 0.006" rpy="-1.77829 1.5708 0" />
+		<parent link="finger_distal_2" />
+		<child link="finger_tip_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="IndexPIPL" type="revolute">
+		<origin xyz="0.0059 -0.00336546 0.024" rpy="-1.5708 6.61344e-08 1.5708" />
+		<parent link="finger_proximal_upper_2" />
+		<child link="finger_distal_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="IndexProximalL_passive" type="fixed">
+		<origin xyz="0.00336546 -0.024 -0.0059" rpy="1.5708 1.5708 0" />
+		<parent link="finger_proximal_lower_2" />
+		<child link="finger_proximal_upper_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="indexMPL" type="revolute">
+		<origin xyz="0.00936079 0.0285312 -0.004" rpy="1.5708 1.48542 -1.74533" />
+		<parent link="palm_left" />
+		<child link="finger_proximal_lower_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="finger_proximal_lower_3">
+		<visual>
+			<origin xyz="0.00336546 -0.104 -0.0059" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 -0.104 -0.0059" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00202829 0.0134823 -0.00597427" rpy="0 0 0" />
+			<mass value="0.00462164" />
+			<inertia ixx="2.45101e-07" ixy="8.64255e-10" ixz="-3.89998e-08" iyy="3.29333e-07" iyz="1.44008e-09" izz="3.45872e-07" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_upper_3">
+		<visual>
+			<origin xyz="5.55112e-17 2.77556e-17 0.148" rpy="-3.14159 -5.55112e-17 -1.38778e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="5.55112e-17 2.77556e-17 0.148" rpy="-3.14159 -5.55112e-17 -1.38778e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="7.2569e-10 0.00103561 -0.0102571" rpy="0 0 0" />
+			<mass value="0.00496822" />
+			<inertia ixx="3.44348e-07" ixy="8.8931e-15" ixz="3.10323e-14" iyy="3.63867e-07" iyz="4.46039e-08" izz="2.62281e-07" />
+		</inertial>
+	</link>
+	<link name="finger_distal_3">
+		<visual>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00359073 -0.0226737 0.00599997" rpy="0 0 0" />
+			<mass value="0.00872858" />
+			<inertia ixx="5.67004e-07" ixy="1.07387e-12" ixz="-1.33534e-07" iyy="1.24609e-06" iyz="1.82919e-12" izz="1.26337e-06" />
+		</inertial>
+	</link>
+	<link name="finger_tip_3">
+		<visual>
+			<origin xyz="-1.11022e-16 -0.0428442 0.24278" rpy="-2.9341 -1.11022e-16 3.1225e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-1.11022e-16 -0.0428442 0.24278" rpy="-2.9341 -1.11022e-16 3.1225e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-1.77078e-08 -0.00110008 -0.00378255" rpy="0 0 0" />
+			<mass value="0.00255592" />
+			<inertia ixx="7.23719e-08" ixy="-3.56294e-13" ixz="-4.01041e-13" iyy="6.97088e-08" iyz="1.3178e-08" izz="1.04738e-07" />
+		</inertial>
+	</link>
+	<joint name="RingDistalL_passive" type="fixed">
+		<origin xyz="0.00645562 -0.0386782 0.006" rpy="-1.77829 1.5708 0" />
+		<parent link="finger_distal_3" />
+		<child link="finger_tip_3" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="RingPIPL" type="revolute">
+		<origin xyz="0.0059 0.00336546 -0.024" rpy="1.5708 6.93889e-17 -1.5708" />
+		<parent link="finger_proximal_upper_3" />
+		<child link="finger_distal_3" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="RingProximalL_passive" type="fixed">
+		<origin xyz="0.00336546 0.024 -0.0059" rpy="1.5708 -1.5708 0" />
+		<parent link="finger_proximal_lower_3" />
+		<child link="finger_proximal_upper_3" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="RingMCL" type="revolute">
+		<origin xyz="-0.0304255 0.0285312 -0.004" rpy="-0.174533 1.5708 0" />
+		<parent link="palm_left" />
+		<child link="finger_proximal_lower_3" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-1.48353" upper="0" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="finger_proximal_lower_4">
+		<visual>
+			<origin xyz="0.00336546 -0.104 -0.0059" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 -0.104 -0.0059" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00202829 0.0134823 -0.00597427" rpy="0 0 0" />
+			<mass value="0.00462164" />
+			<inertia ixx="2.45101e-07" ixy="8.64255e-10" ixz="-3.89998e-08" iyy="3.29333e-07" iyz="1.44008e-09" izz="3.45872e-07" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_upper_4">
+		<visual>
+			<origin xyz="5.55112e-17 9.71445e-17 0.148" rpy="-3.14159 -5.55112e-17 -1.38778e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="5.55112e-17 9.71445e-17 0.148" rpy="-3.14159 -5.55112e-17 -1.38778e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="7.2569e-10 0.00103561 -0.0102571" rpy="0 0 0" />
+			<mass value="0.00496822" />
+			<inertia ixx="3.44348e-07" ixy="8.8931e-15" ixz="3.10323e-14" iyy="3.63867e-07" iyz="4.46039e-08" izz="2.62281e-07" />
+		</inertial>
+	</link>
+	<link name="finger_distal_4">
+		<visual>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00359073 -0.0226737 0.00599997" rpy="0 0 0" />
+			<mass value="0.00872858" />
+			<inertia ixx="5.67004e-07" ixy="1.07387e-12" ixz="-1.33534e-07" iyy="1.24609e-06" iyz="1.82919e-12" izz="1.26337e-06" />
+		</inertial>
+	</link>
+	<link name="finger_tip_4">
+		<visual>
+			<origin xyz="-5.55112e-17 -0.0428442 0.24278" rpy="-2.9341 -0 -1.14492e-16" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-5.55112e-17 -0.0428442 0.24278" rpy="-2.9341 -0 -1.14492e-16" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-1.77078e-08 -0.00110008 -0.00378255" rpy="0 0 0" />
+			<mass value="0.00255592" />
+			<inertia ixx="7.23719e-08" ixy="-3.56294e-13" ixz="-4.01041e-13" iyy="6.97088e-08" iyz="1.3178e-08" izz="1.04738e-07" />
+		</inertial>
+	</link>
+	<joint name="MiddleDistalL_passive" type="fixed">
+		<origin xyz="0.00645562 -0.0386782 0.006" rpy="-1.77829 1.5708 0" />
+		<parent link="finger_distal_4" />
+		<child link="finger_tip_4" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="MiddleMCPL" type="revolute">
+		<origin xyz="0.0059 0.00336546 -0.024" rpy="1.5708 -7.66082e-13 -1.5708" />
+		<parent link="finger_proximal_upper_4" />
+		<child link="finger_distal_4" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="MiddleProximalL_passive" type="fixed">
+		<origin xyz="0.00336546 0.024 -0.0059" rpy="1.5708 -1.5708 0" />
+		<parent link="finger_proximal_lower_4" />
+		<child link="finger_proximal_upper_4" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="MiddleMCL" type="revolute">
+		<origin xyz="-0.00453235 0.0388718 -0.004" rpy="-1.5708 1.5566 -1.5708" />
+		<parent link="palm_left" />
+		<child link="finger_proximal_lower_4" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-1.48353" upper="0" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="thumb_connector">
+		<visual>
+			<origin xyz="-0.0139001 -0.00414738 -0.0226884" rpy="5.63675e-17 -0.174533 -1.40919e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/thumb_connector.stl" />
+			</geometry>
+			<material name="thumb_connector_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.0139001 -0.00414738 -0.0226884" rpy="5.63675e-17 -0.174533 -1.40919e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/thumb_connector.stl" />
+			</geometry>
+			<material name="thumb_connector_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00776031 -8.29837e-17 -0.00860959" rpy="0 0 0" />
+			<mass value="0.00246448" />
+			<inertia ixx="7.24902e-08" ixy="-1.40464e-11" ixz="3.98399e-08" iyy="1.55286e-07" iyz="-3.85921e-11" izz="1.1195e-07" />
+		</inertial>
+	</link>
+	<link name="thumb_right">
+		<visual>
+			<origin xyz="0.183926 0.01 0.146421" rpy="1.5708 -0.785398 7.35981e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/thumb_right.stl" />
+			</geometry>
+			<material name="thumb_right_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.183926 0.01 0.146421" rpy="1.5708 -0.785398 7.35981e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/thumb_right.stl" />
+			</geometry>
+			<material name="thumb_right_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00150718 -0.0119706 0.00404975" rpy="0 0 0" />
+			<mass value="0.00618989" />
+			<inertia ixx="5.76209e-07" ixy="-1.7362e-07" ixz="-1.63167e-08" iyy="5.24911e-07" iyz="-3.47659e-08" izz="7.67985e-07" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_upper_5">
+		<visual>
+			<origin xyz="0.00336546 0.172 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.172 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00232985 0.0137429 -0.0059" rpy="0 0 0" />
+			<mass value="0.00496822" />
+			<inertia ixx="2.62281e-07" ixy="3.10323e-14" ixz="4.46039e-08" iyy="3.44348e-07" iyz="8.8931e-15" izz="3.63867e-07" />
+		</inertial>
+	</link>
+	<link name="finger_tip_5">
+		<visual>
+			<origin xyz="0 -0.0428442 0.24278" rpy="-2.9341 -1.45717e-16 -2.77556e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 -0.0428442 0.24278" rpy="-2.9341 -1.45717e-16 -2.77556e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-1.77078e-08 -0.00110008 -0.00378255" rpy="0 0 0" />
+			<mass value="0.00255592" />
+			<inertia ixx="7.23719e-08" ixy="-3.56294e-13" ixz="-4.01041e-13" iyy="6.97088e-08" iyz="1.3178e-08" izz="1.04738e-07" />
+		</inertial>
+	</link>
+	<joint name="ThumbDistalL_passive" type="fixed">
+		<origin xyz="0.00336546 0.024 -0.0059" rpy="1.5708 -1.5708 0" />
+		<parent link="finger_proximal_upper_5" />
+		<child link="finger_tip_5" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="ThumbMPL" type="revolute">
+		<origin xyz="0.00670013 -0.031 0.0068629" rpy="0.214062 -0.76176 2.83646" />
+		<parent link="thumb_right" />
+		<child link="finger_proximal_upper_5" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-1.48353" upper="0" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="ThumbConnectionL_passive" type="fixed">
+		<origin xyz="0.0171835 -0.00401064 -0.0098" rpy="-1.5708 1.39626 1.03575e-13" />
+		<parent link="thumb_connector" />
+		<child link="thumb_right" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="ThumbCMCL" type="revolute">
+		<origin xyz="0.00713111 -0.0320012 -0.0115128" rpy="-1.5708 1.42717 -0.174533" />
+		<parent link="palm_left" />
+		<child link="thumb_connector" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.5708" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="PalmHandBackL" type="fixed">
+		<origin xyz="0.011 -0.0601282 -0.042758" rpy="-3.14159 1.5708 0" />
+		<parent link="hand_back_left" />
+		<child link="palm_left" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="HandFlexionL" type="revolute">
+		<origin xyz="-0.025 0.015 -0.165" rpy="1.5708 0.174533 -1.5708" />
+		<parent link="distal_lower_arm" />
+		<child link="hand_back_left" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-0.174533" upper="0.523599" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="lowerArmCircumductionL" type="revolute">
+		<origin xyz="-0.0647 -0.00749939 0.0414919" rpy="1.5708 1.97579e-05 1.5708" />
+		<parent link="lower_arm" />
+		<child link="distal_lower_arm" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.5708" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="LowerArmRotatorServoArmL_passive" type="fixed">
+		<origin xyz="0.0255 0.025 0.0736167" rpy="-3.14159 2.16373e-16 -3.14159" />
+		<parent link="ellbow_servo_scaffold" />
+		<child link="lower_arm" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="FlexionEllbowL" type="revolute">
+		<origin xyz="-0.0265 0.0266 0.0091063" rpy="-5.85134e-15 2.82254e-15 -3.11398" />
+		<parent link="ellbow_joint_upper" />
+		<child link="ellbow_servo_scaffold" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="0.855211" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="EllbowJointUpperArmL_passive" type="fixed">
+		<origin xyz="0.0075 0.04091 -0.0814006" rpy="1.5708 -1.5708 0" />
+		<parent link="upper_arm_ellbow" />
+		<child link="ellbow_joint_upper" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="UpperArmRotationL" type="revolute">
+		<origin xyz="7.21645e-16 3.21965e-15 -0.095" rpy="-1.48271e-15 -7.49401e-15 -2.61806" />
+		<parent link="upper_arm" />
+		<child link="upper_arm_ellbow" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="3.83972" upper="5.23599" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="UpperArmFlexionConnectorL_passive" type="fixed">
+		<origin xyz="-0.0375 -0.06265 0.0041" rpy="-1.5708 1.0472 0" />
+		<parent link="flexion_connector" />
+		<child link="upper_arm" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="FlexionConnectorConnectorNutL_passive" type="fixed">
+		<origin xyz="-2.77556e-17 -0.004 -0.0165" rpy="-1.5708 1.5708 0" />
+		<parent link="shoulder_axis_connector_nut" />
+		<child link="flexion_connector" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="AdductionshoulderL" type="revolute">
+		<origin xyz="-0.027139 -0.021 -0.028" rpy="1.5708 0.814149 3.14159" />
+		<parent link="shoulder_vertical_bracket_left" />
+		<child link="shoulder_axis_connector_nut" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0.349066" upper="2.87979" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="FlexionShoulderL" type="revolute">
+		<origin xyz="-0.190506 0.004 -0.017021" rpy="1.5708 0.931365 -8.39638e-15" />
+		<parent link="clavicle_left" />
+		<child link="shoulder_vertical_bracket_left" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-0.139626" upper="1.5708" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="neck">
+		<visual>
+			<origin xyz="0.0618134 -0.101211 0" rpy="3.14159 -0 1.07238e-30" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/neck.stl" />
+			</geometry>
+			<material name="neck_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for neck -->
+		<inertial>
+			<origin xyz="-2.77556e-17 -1.52656e-16 -0.0475" rpy="0 0 0" />
+			<mass value="0.0656593" />
+			<inertia ixx="0.000112972" ixy="-1.08465e-34" ixz="8.91194e-35" iyy="0.000112972" iyz="1.00062e-65" izz="0.000127182" />
+		</inertial>
+	</link>
+	<link name="head_base">
+		<visual>
+			<origin xyz="-0.32291 0.162707 -0.005" rpy="3.15544e-30 -1.57772e-30 -1.4744e-28" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/head_base.stl" />
+			</geometry>
+			<material name="head_base_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for head_base -->
+		<inertial>
+			<origin xyz="0.00150635 -0.000342909 -0.00697581" rpy="0 0 0" />
+			<mass value="0.0899368" />
+			<inertia ixx="0.0002402" ixy="-1.336e-08" ixz="-1.7438e-07" iyy="0.000165943" iyz="-8.38777e-06" izz="0.000384116" />
+		</inertial>
+	</link>
+	<link name="face">
+		<visual>
+			<origin xyz="-0.104862 -0.0145064 -0.012894" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/face.stl"/>
+			</geometry>
+			<material name="face_material">
+				<color rgba="1 1 1 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for face -->
+		<inertial>
+			<origin xyz="-0.00128697 0.0701356 0.0663705" rpy="0 0 0" />
+			<mass value="0.812719" />
+			<inertia ixx="0.0034997" ixy="2.47329e-06" ixz="0.000128251" iyy="0.00265952" iyz="-1.07452e-05" izz="0.00147189" />
+		</inertial>
+	</link>
+	<joint name="HeadFlexion" type="revolute">
+		<origin xyz="0.0670731 -0.02118 -0.045" rpy="-1.5708 1.44635 1.5708" />
+		<parent link="head_base" />
+		<child link="face" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-0.698132" upper="0.314159" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="HeadRotation" type="revolute">
+		<origin xyz="2.5289e-17 -2.53703e-17 -0.095" rpy="-3.10179e-15 4.33873e-15 3.04685" />
+		<parent link="neck" />
+		<child link="head_base" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-0.523599" upper="0.523599" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="NeckClavicleLeft_passive" type="fixed">
+		<origin xyz="-0.005 -0.004 -0.05" rpy="1.5708 -1.07238e-30 3.14159" />
+		<parent link="clavicle_left" />
+		<child link="neck" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="ClavicleLeftRight_passive" type="fixed">
+		<origin xyz="-0.116791 -0.0825964 -0.106" rpy="1.5708 1.57772e-30 -2.27473e-19" />
+		<parent link="clavicle_right" />
+		<child link="clavicle_left" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="shoulder_vertical_bracket_right">
+		<visual>
+			<origin xyz="-0.092861 2.77556e-17 -0.028" rpy="1.5708 -0 -5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/shoulder_vertical_bracket_right.stl" />
+			</geometry>
+			<material name="shoulder_vertical_bracket_right_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for shoulder_vertical_bracket_right -->
+		<inertial>
+			<origin xyz="0.00816527 7.46628e-05 -0.0297393" rpy="0 0 0" />
+			<mass value="0.0270907" />
+			<inertia ixx="1.40884e-05" ixy="4.45608e-09" ixz="3.94307e-07" iyy="6.84607e-06" iyz="-3.5169e-09" izz="1.14417e-05" />
+		</inertial>
+	</link>
+	<link name="shoulder_axis_connector_nut_2">
+		<visual>
+			<origin xyz="-0.0482299 -0.0725049 0.025" rpy="3.14159 2.33381e-17 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/shoulder_axis_connector_nut.stl" />
+			</geometry>
+			<material name="shoulder_axis_connector_nut_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for shoulder_axis_connector_nut -->
+		<inertial>
+			<origin xyz="-0.000341447 -4.42801e-19 0.0122623" rpy="0 0 0" />
+			<mass value="0.00519155" />
+			<inertia ixx="8.09966e-07" ixy="-1.86325e-15" ixz="3.14426e-08" iyy="8.07399e-07" iyz="2.6459e-23" izz="9.12449e-08" />
+		</inertial>
+	</link>
+	<link name="shoulder_axis_connector_screw_2">
+		<visual>
+			<origin xyz="0.0725049 0.005 -0.02608" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/shoulder_axis_connector_screw.stl" />
+			</geometry>
+			<material name="shoulder_axis_connector_screw_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for shoulder_axis_connector_screw -->
+		<inertial>
+			<origin xyz="-4.31182e-17 0.0175878 -0.000375935" rpy="0 0 0" />
+			<mass value="0.00523579" />
+			<inertia ixx="9.21279e-08" ixy="-3.46184e-08" ixz="5.92341e-23" iyy="8.24043e-07" iyz="-1.93446e-15" izz="8.22084e-07" />
+		</inertial>
+	</link>
+	<link name="flexion_connector_2">
+		<visual>
+			<origin xyz="-0.0319499 0.06265 -0.114643" rpy="-2.22045e-16 -1.0472 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/flexion_connector.stl" />
+			</geometry>
+			<material name="flexion_connector_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for flexion_connector -->
+		<inertial>
+			<origin xyz="-0.0375001 0.0432659 0.00406559" rpy="0 0 0" />
+			<mass value="0.0754048" />
+			<inertia ixx="9.543e-05" ixy="-4.69081e-07" ixz="-2.03842e-05" iyy="0.000116268" iyz="2.70273e-07" izz="7.18917e-05" />
+		</inertial>
+	</link>
+	<link name="upper_arm_2">
+		<visual>
+			<origin xyz="5.55112e-17 0 -0.095" rpy="-8.32667e-17 5.55112e-17 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/upper_arm.stl" />
+			</geometry>
+			<material name="upper_arm_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for upper_arm -->
+		<inertial>
+			<origin xyz="-5.06419e-17 1.06599e-16 -0.0475" rpy="0 0 0" />
+			<mass value="0.0332027" />
+			<inertia ixx="5.78502e-05" ixy="3.03949e-37" ixz="-1.32843e-20" iyy="5.78502e-05" iyz="2.55288e-21" izz="6.5758e-05" />
+		</inertial>
+	</link>
+	<link name="upper_arm_ellbow_2">
+		<visual>
+			<origin xyz="-0.116145 5.55112e-17 -0.0889006" rpy="-1.38778e-17 -5.55112e-17 -2.77556e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/upper_arm_ellbow.stl" />
+			</geometry>
+			<material name="upper_arm_ellbow_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for upper_arm_ellbow -->
+		<inertial>
+			<origin xyz="6.82995e-10 -8.57488e-09 -0.0531732" rpy="0 0 0" />
+			<mass value="0.076739" />
+			<inertia ixx="0.000118927" ixy="-3.56891e-12" ixz="1.34681e-12" iyy="0.000119203" iyz="-9.73957e-12" izz="0.00014908" />
+		</inertial>
+	</link>
+	<link name="ellbow_joint_upper_2">
+		<visual>
+			<origin xyz="0.0225 -0.0505056 0.127046" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/ellbow_joint_upper.stl" />
+			</geometry>
+			<material name="ellbow_joint_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for ellbow_joint_upper -->
+		<inertial>
+			<origin xyz="0.00643117 0.0113907 0.0411063" rpy="0 0 0" />
+			<mass value="0.0547351" />
+			<inertia ixx="7.29011e-05" ixy="-8.79988e-12" ixz="3.79775e-06" iyy="2.70051e-05" iyz="1.38368e-11" izz="6.30635e-05" />
+		</inertial>
+	</link>
+	<link name="ellbow_servo_scaffold_2">
+		<visual>
+			<origin xyz="0.048 0.169164 0.0435163" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/ellbow_servo_scaffold.stl" />
+			</geometry>
+			<material name="ellbow_servo_scaffold_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for ellbow_servo_scaffold -->
+		<inertial>
+			<origin xyz="0.0268538 0.0129295 0.0324999" rpy="0 0 0" />
+			<mass value="0.0474164" />
+			<inertia ixx="6.5424e-05" ixy="1.10959e-10" ixz="2.96739e-06" iyy="2.39817e-05" iyz="-4.5116e-10" izz="6.03428e-05" />
+		</inertial>
+	</link>
+	<link name="lower_arm_2">
+		<visual>
+			<origin xyz="0.0253 -0.1775 0.17149" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/lower_arm.stl" />
+			</geometry>
+			<material name="lower_arm_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for lower_arm -->
+		<inertial>
+			<origin xyz="-0.0308985 -0.0113115 0.0414922" rpy="0 0 0" />
+			<mass value="0.104671" />
+			<inertia ixx="0.000153338" ixy="-9.81877e-10" ixz="1.026e-05" iyy="0.00014034" iyz="-7.11656e-10" izz="0.000208643" />
+		</inertial>
+	</link>
+	<link name="distal_lower_arm_2">
+		<visual>
+			<origin xyz="0.0579631 0.267 -0.135511" rpy="0 -0 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/distal_lower_arm.stl" />
+			</geometry>
+			<material name="distal_lower_arm_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for distal_lower_arm -->
+		<inertial>
+			<origin xyz="3.73307e-08 0.000715172 -0.0866309" rpy="0 0 0" />
+			<mass value="0.092133" />
+			<inertia ixx="0.000244085" ixy="2.78114e-12" ixz="1.64573e-10" iyy="0.000246902" iyz="4.70715e-06" izz="0.000128285" />
+		</inertial>
+	</link>
+	<link name="hand_back_right">
+		<visual>
+			<origin xyz="0.0383655 0.008 0.127774" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/hand_back_right.stl" />
+			</geometry>
+			<material name="hand_back_right_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0383655 0.008 0.127774" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/hand_back_right.stl" />
+			</geometry>
+			<material name="hand_back_right_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00419214 0.0356139 -0.0244991" rpy="0 0 0" />
+			<mass value="0.0728663" />
+			<inertia ixx="2.24162e-05" ixy="1.53656e-06" ixz="-6.87609e-07" iyy="3.50016e-05" iyz="-1.50606e-08" izz="5.44328e-05" />
+		</inertial>
+	</link>
+	<link name="palm_right">
+		<visual>
+			<origin xyz="0.170532 -0.0521282 -0.00736546" rpy="-1.5708 5.55112e-17 4.51028e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/palm_right.stl" />
+			</geometry>
+			<material name="palm_right_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.170532 -0.0521282 -0.00736546" rpy="-1.5708 5.55112e-17 4.51028e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/palm_right.stl" />
+			</geometry>
+			<material name="palm_right_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.0186987 -0.0183924 -0.00780706" rpy="0 0 0" />
+			<mass value="0.107818" />
+			<inertia ixx="7.44393e-05" ixy="-3.48829e-06" ixz="-6.29632e-08" iyy="4.421e-05" iyz="-5.90192e-07" izz="0.000113362" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_lower_5">
+		<visual>
+			<origin xyz="0.00336546 0.104 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.104 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00202829 -0.0134823 -0.00582573" rpy="0 0 0" />
+			<mass value="0.00462164" />
+			<inertia ixx="2.45101e-07" ixy="-8.64255e-10" ixz="-3.89998e-08" iyy="3.29333e-07" iyz="-1.44008e-09" izz="3.45872e-07" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_upper_6">
+		<visual>
+			<origin xyz="-8.1532e-17 5.55112e-17 0.148" rpy="3.14159 3.46945e-17 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-8.1532e-17 5.55112e-17 0.148" rpy="3.14159 3.46945e-17 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="7.25689e-10 0.00103561 -0.0102571" rpy="0 0 0" />
+			<mass value="0.00496822" />
+			<inertia ixx="3.44348e-07" ixy="8.8931e-15" ixz="3.10323e-14" iyy="3.63867e-07" iyz="4.46039e-08" izz="2.62281e-07" />
+		</inertial>
+	</link>
+	<link name="finger_distal_5">
+		<visual>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00359073 -0.0226737 0.00599997" rpy="0 0 0" />
+			<mass value="0.00872858" />
+			<inertia ixx="5.67004e-07" ixy="1.07387e-12" ixz="-1.33534e-07" iyy="1.24609e-06" iyz="1.82919e-12" izz="1.26337e-06" />
+		</inertial>
+	</link>
+	<link name="finger_tip_6">
+		<visual>
+			<origin xyz="-1.33574e-16 -0.0428442 0.24278" rpy="-2.9341 -9.02056e-17 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-1.33574e-16 -0.0428442 0.24278" rpy="-2.9341 -9.02056e-17 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-1.77078e-08 -0.00110008 -0.00378255" rpy="0 0 0" />
+			<mass value="0.00255592" />
+			<inertia ixx="7.23719e-08" ixy="-3.56294e-13" ixz="-4.01041e-13" iyy="6.97088e-08" iyz="1.3178e-08" izz="1.04738e-07" />
+		</inertial>
+	</link>
+	<joint name="IndexDistalR_passive" type="fixed">
+		<origin xyz="0.00645562 -0.0386782 0.006" rpy="-1.77829 1.5708 0" />
+		<parent link="finger_distal_5" />
+		<child link="finger_tip_6" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="IndexPIPR" type="revolute">
+		<origin xyz="0.0059 0.00336546 -0.024" rpy="1.5708 -7.07767e-16 -1.5708" />
+		<parent link="finger_proximal_upper_6" />
+		<child link="finger_distal_5" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="IndexProximal_passive" type="fixed">
+		<origin xyz="0.00336546 -0.024 -0.0059" rpy="-1.5708 1.5708 0" />
+		<parent link="finger_proximal_lower_5" />
+		<child link="finger_proximal_upper_6" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="IndexMPR" type="revolute">
+		<origin xyz="-0.0211785 0.0264474 -0.004" rpy="1.5708 1.55928 -1.39626" />
+		<parent link="palm_right" />
+		<child link="finger_proximal_lower_5" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="finger_proximal_lower_6">
+		<visual>
+			<origin xyz="0.00336546 0.104 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.104 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00202829 -0.0134823 -0.00582573" rpy="0 0 0" />
+			<mass value="0.00462164" />
+			<inertia ixx="2.45101e-07" ixy="-8.64255e-10" ixz="-3.89998e-08" iyy="3.29333e-07" iyz="-1.44008e-09" izz="3.45872e-07" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_upper_7">
+		<visual>
+			<origin xyz="5.55112e-17 -2.77556e-17 0.148" rpy="3.14159 -2.77556e-17 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="5.55112e-17 -2.77556e-17 0.148" rpy="3.14159 -2.77556e-17 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="7.2569e-10 0.00103561 -0.0102571" rpy="0 0 0" />
+			<mass value="0.00496822" />
+			<inertia ixx="3.44348e-07" ixy="8.8931e-15" ixz="3.10323e-14" iyy="3.63867e-07" iyz="4.46039e-08" izz="2.62281e-07" />
+		</inertial>
+	</link>
+	<link name="finger_distal_6">
+		<visual>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00359073 -0.0226737 0.00599997" rpy="0 0 0" />
+			<mass value="0.00872858" />
+			<inertia ixx="5.67004e-07" ixy="1.07387e-12" ixz="-1.33534e-07" iyy="1.24609e-06" iyz="1.82919e-12" izz="1.26337e-06" />
+		</inertial>
+	</link>
+	<link name="finger_tip_7">
+		<visual>
+			<origin xyz="-5.55112e-17 -0.0428442 0.24278" rpy="-2.9341 -2.77556e-17 -5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-5.55112e-17 -0.0428442 0.24278" rpy="-2.9341 -2.77556e-17 -5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-1.77078e-08 -0.00110008 -0.00378255" rpy="0 0 0" />
+			<mass value="0.00255592" />
+			<inertia ixx="7.23719e-08" ixy="-3.56294e-13" ixz="-4.01041e-13" iyy="6.97088e-08" iyz="1.3178e-08" izz="1.04738e-07" />
+		</inertial>
+	</link>
+	<joint name="LittleDistalR_passive" type="fixed">
+		<origin xyz="0.00645562 -0.0386782 0.006" rpy="-1.77829 1.5708 0" />
+		<parent link="finger_distal_6" />
+		<child link="finger_tip_7" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="LittlePIPR" type="revolute">
+		<origin xyz="0.0059 0.00336546 -0.024" rpy="1.5708 6.66134e-16 -1.5708" />
+		<parent link="finger_proximal_upper_7" />
+		<child link="finger_distal_6" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="littleProximal_passive" type="fixed">
+		<origin xyz="0.00336546 -0.024 -0.0059" rpy="-1.5708 1.5708 0" />
+		<parent link="finger_proximal_lower_6" />
+		<child link="finger_proximal_upper_7" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="LittleMPR" type="revolute">
+		<origin xyz="0.0529466 0.0162721 -0.004" rpy="1.5708 1.48719 -1.88496" />
+		<parent link="palm_right" />
+		<child link="finger_proximal_lower_6" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="finger_proximal_lower_7">
+		<visual>
+			<origin xyz="0.00336546 -0.104 0.0059" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 -0.104 0.0059" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00202829 0.0134823 0.00582573" rpy="0 0 0" />
+			<mass value="0.00462164" />
+			<inertia ixx="2.45101e-07" ixy="8.64255e-10" ixz="-3.89998e-08" iyy="3.29333e-07" iyz="1.44008e-09" izz="3.45872e-07" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_upper_8">
+		<visual>
+			<origin xyz="2.77556e-17 2.77556e-17 0.148" rpy="3.14159 4.16334e-17 -5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="2.77556e-17 2.77556e-17 0.148" rpy="3.14159 4.16334e-17 -5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="7.25689e-10 0.00103561 -0.0102571" rpy="0 0 0" />
+			<mass value="0.00496822" />
+			<inertia ixx="3.44348e-07" ixy="8.8931e-15" ixz="3.10323e-14" iyy="3.63867e-07" iyz="4.46039e-08" izz="2.62281e-07" />
+		</inertial>
+	</link>
+	<link name="finger_distal_7">
+		<visual>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00359073 -0.0226737 0.00599997" rpy="0 0 0" />
+			<mass value="0.00872858" />
+			<inertia ixx="5.67004e-07" ixy="1.07387e-12" ixz="-1.33534e-07" iyy="1.24609e-06" iyz="1.82919e-12" izz="1.26337e-06" />
+		</inertial>
+	</link>
+	<link name="finger_tip_8">
+		<visual>
+			<origin xyz="-8.32667e-17 -0.0428442 0.24278" rpy="-2.9341 -5.55112e-17 -5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-8.32667e-17 -0.0428442 0.24278" rpy="-2.9341 -5.55112e-17 -5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-1.77078e-08 -0.00110008 -0.00378255" rpy="0 0 0" />
+			<mass value="0.00255592" />
+			<inertia ixx="7.23719e-08" ixy="-3.56294e-13" ixz="-4.01041e-13" iyy="6.97088e-08" iyz="1.3178e-08" izz="1.04738e-07" />
+		</inertial>
+	</link>
+	<joint name="RingDistalR_passive" type="fixed">
+		<origin xyz="0.00645562 -0.0386782 0.006" rpy="-1.77829 1.5708 0" />
+		<parent link="finger_distal_7" />
+		<child link="finger_tip_8" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="RingPIPR" type="revolute">
+		<origin xyz="0.0059 0.00336546 -0.024" rpy="1.5708 1.249e-16 -1.5708" />
+		<parent link="finger_proximal_upper_8" />
+		<child link="finger_distal_7" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="RingProximalR_passive" type="fixed">
+		<origin xyz="0.00336546 0.024 0.0059" rpy="1.5708 -1.5708 0" />
+		<parent link="finger_proximal_lower_7" />
+		<child link="finger_proximal_upper_8" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="RingMPR" type="revolute">
+		<origin xyz="0.0304255 0.0285312 -0.004" rpy="-1.5708 1.53499 -1.74533" />
+		<parent link="palm_right" />
+		<child link="finger_proximal_lower_7" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-1.48353" upper="0" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="finger_proximal_lower_8">
+		<visual>
+			<origin xyz="0.00336546 0.104 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.104 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_lower.stl" />
+			</geometry>
+			<material name="finger_proximal_lower_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00202829 -0.0134823 -0.00582573" rpy="0 0 0" />
+			<mass value="0.00462164" />
+			<inertia ixx="2.45101e-07" ixy="-8.64255e-10" ixz="-3.89998e-08" iyy="3.29333e-07" iyz="-1.44008e-09" izz="3.45872e-07" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_upper_9">
+		<visual>
+			<origin xyz="1.249e-16 -1.38778e-17 0.148" rpy="-3.14159 -3.29597e-17 1.11022e-16" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="1.249e-16 -1.38778e-17 0.148" rpy="-3.14159 -3.29597e-17 1.11022e-16" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="7.2569e-10 0.00103561 -0.0102571" rpy="0 0 0" />
+			<mass value="0.00496822" />
+			<inertia ixx="3.44348e-07" ixy="8.8931e-15" ixz="3.10323e-14" iyy="3.63867e-07" iyz="4.46039e-08" izz="2.62281e-07" />
+		</inertial>
+	</link>
+	<link name="finger_distal_8">
+		<visual>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.192721 0.006" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_distal.stl" />
+			</geometry>
+			<material name="finger_distal_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00359073 -0.0226737 0.00599997" rpy="0 0 0" />
+			<mass value="0.00872858" />
+			<inertia ixx="5.67004e-07" ixy="1.07387e-12" ixz="-1.33534e-07" iyy="1.24609e-06" iyz="1.82919e-12" izz="1.26337e-06" />
+		</inertial>
+	</link>
+	<link name="finger_tip_9">
+		<visual>
+			<origin xyz="-1.249e-16 -0.0428442 0.24278" rpy="-2.9341 -5.55112e-17 5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-1.249e-16 -0.0428442 0.24278" rpy="-2.9341 -5.55112e-17 5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-1.77078e-08 -0.00110008 -0.00378255" rpy="0 0 0" />
+			<mass value="0.00255592" />
+			<inertia ixx="7.23719e-08" ixy="-3.56294e-13" ixz="-4.01041e-13" iyy="6.97088e-08" iyz="1.3178e-08" izz="1.04738e-07" />
+		</inertial>
+	</link>
+	<joint name="MiddleDistalR_passive" type="fixed">
+		<origin xyz="0.00645562 -0.0386782 0.006" rpy="-1.77829 1.5708 0" />
+		<parent link="finger_distal_8" />
+		<child link="finger_tip_9" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="MiddlePIPR" type="revolute">
+		<origin xyz="0.0059 0.00336546 -0.024" rpy="1.5708 -6.245e-16 -1.5708" />
+		<parent link="finger_proximal_upper_9" />
+		<child link="finger_distal_8" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="MiddleProximalR_passive" type="fixed">
+		<origin xyz="0.00336546 -0.024 -0.0059" rpy="-1.5708 1.5708 0" />
+		<parent link="finger_proximal_lower_8" />
+		<child link="finger_proximal_upper_9" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="MiddleMPR" type="revolute">
+		<origin xyz="0.00453235 0.0388718 -0.004" rpy="3.14159 1.5708 0" />
+		<parent link="palm_right" />
+		<child link="finger_proximal_lower_8" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.48353" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="thumb_connector_2">
+		<visual>
+			<origin xyz="-0.0139001 -0.00414738 -0.0226884" rpy="2.81838e-17 -0.174533 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/thumb_connector.stl" />
+			</geometry>
+			<material name="thumb_connector_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.0139001 -0.00414738 -0.0226884" rpy="2.81838e-17 -0.174533 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/thumb_connector.stl" />
+			</geometry>
+			<material name="thumb_connector_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00776031 1.59451e-18 -0.00860959" rpy="0 0 0" />
+			<mass value="0.00246448" />
+			<inertia ixx="7.24902e-08" ixy="-1.40464e-11" ixz="3.98399e-08" iyy="1.55286e-07" iyz="-3.85921e-11" izz="1.1195e-07" />
+		</inertial>
+	</link>
+	<link name="thumb_middle">
+		<visual>
+			<origin xyz="-0.0707884 -0.01 -0.0332843" rpy="-1.5708 -0.785398 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/thumb_middle.stl" />
+			</geometry>
+			<material name="thumb_middle_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.0707884 -0.01 -0.0332843" rpy="-1.5708 -0.785398 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/thumb_middle.stl" />
+			</geometry>
+			<material name="thumb_middle_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-0.00150734 0.0119705 -0.00404973" rpy="0 0 0" />
+			<mass value="0.00618984" />
+			<inertia ixx="5.2491e-07" ixy="1.73617e-07" ixz="3.4774e-08" iyy="5.76194e-07" iyz="-1.63204e-08" izz="7.67985e-07" />
+		</inertial>
+	</link>
+	<link name="finger_proximal_upper_10">
+		<visual>
+			<origin xyz="0.00336546 0.172 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.00336546 0.172 -0.0059" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_proximal_upper.stl" />
+			</geometry>
+			<material name="finger_proximal_upper_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00232985 0.0137429 -0.0059" rpy="0 0 0" />
+			<mass value="0.00496822" />
+			<inertia ixx="2.62281e-07" ixy="3.10323e-14" ixz="4.46039e-08" iyy="3.44348e-07" iyz="8.8931e-15" izz="3.63867e-07" />
+		</inertial>
+	</link>
+	<link name="finger_tip_10">
+		<visual>
+			<origin xyz="-1.11022e-16 -0.0428442 0.24278" rpy="-2.9341 -6.93889e-18 -5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-1.11022e-16 -0.0428442 0.24278" rpy="-2.9341 -6.93889e-18 -5.55112e-17" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/finger_tip.stl" />
+			</geometry>
+			<material name="finger_tip_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-1.77078e-08 -0.00110008 -0.00378255" rpy="0 0 0" />
+			<mass value="0.00255592" />
+			<inertia ixx="7.23719e-08" ixy="-3.56294e-13" ixz="-4.01041e-13" iyy="6.97088e-08" iyz="1.3178e-08" izz="1.04738e-07" />
+		</inertial>
+	</link>
+	<joint name="ThumbDistal_passive" type="fixed">
+		<origin xyz="0.00336546 0.024 -0.0059" rpy="1.5708 -1.5708 0" />
+		<parent link="finger_proximal_upper_10" />
+		<child link="finger_tip_10" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="ThumbMCR" type="revolute">
+		<origin xyz="0.00178515 0.031 0.00162238" rpy="-0.34449 0.720851 -0.497925" />
+		<parent link="thumb_middle" />
+		<child link="finger_proximal_upper_10" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-1.48353" upper="0" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="ThumbConnectorR_passive" type="fixed">
+		<origin xyz="0.0171835 0.00401064 -0.00999772" rpy="1.5708 -1.39626 -3.14159" />
+		<parent link="thumb_connector_2" />
+		<child link="thumb_middle" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="ThumbCMCR" type="revolute">
+		<origin xyz="-0.00713111 -0.0320012 -0.0115128" rpy="1.5708 0.293291 -2.96706" />
+		<parent link="palm_right" />
+		<child link="thumb_connector_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-1.5708" upper="0" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="PalmHandBackR_passive" type="fixed">
+		<origin xyz="0.011 0.0601282 -0.042758" rpy="-1.76942e-16 -1.5708 0" />
+		<parent link="hand_back_right" />
+		<child link="palm_right" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="HandFelxionR" type="revolute">
+		<origin xyz="0.025 0.015 -0.165" rpy="-1.5708 0.523599 -1.5708" />
+		<parent link="distal_lower_arm_2" />
+		<child link="hand_back_right" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-0.174533" upper="0.523599" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="lowerArmCircumductionR" type="revolute">
+		<origin xyz="-0.0647 -0.00749939 0.0414919" rpy="-1.5708 0.844167 -1.5708" />
+		<parent link="lower_arm_2" />
+		<child link="distal_lower_arm_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-1.5708" upper="0" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="LowerArmRotatorServoR_passive" type="fixed">
+		<origin xyz="0.0255 0.025 0.0736167" rpy="3.14159 2.63678e-16 3.14159" />
+		<parent link="ellbow_servo_scaffold_2" />
+		<child link="lower_arm_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="FlexionEllbowR" type="revolute">
+		<origin xyz="-0.0265 0.0266 0.0091063" rpy="-3.48055e-14 -1.12549e-14 3.14159" />
+		<parent link="ellbow_joint_upper_2" />
+		<child link="ellbow_servo_scaffold_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="0.855211" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="EllbowJointUpperArmR_passive" type="fixed">
+		<origin xyz="-0.0075 -0.04091 -0.0814006" rpy="-1.5708 -1.5708 0" />
+		<parent link="upper_arm_ellbow_2" />
+		<child link="ellbow_joint_upper_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="UpperArmRotationR" type="revolute">
+		<origin xyz="2.77556e-16 -3.747e-16 -0.095" rpy="-1.06443e-14 -2.12608e-14 0.72663" />
+		<parent link="upper_arm_2" />
+		<child link="upper_arm_ellbow_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="0" upper="1.65806" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="UpperArmFelxionConnector_passive" type="fixed">
+		<origin xyz="-0.0375 0.06265 0.0041" rpy="1.5708 -1.0472 0" />
+		<parent link="flexion_connector_2" />
+		<child link="upper_arm_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="FlexionConnectorConnectorNutArmR_passive" type="fixed">
+		<origin xyz="0.004 0.0375 6.93889e-18" rpy="-1.5708 3.92603e-16 1.5708" />
+		<parent link="shoulder_axis_connector_screw_2" />
+		<child link="flexion_connector_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="ConnectorScrewConnectorNutArmR_passive" type="fixed">
+		<origin xyz="-2.42861e-17 -5.55112e-17 0.03" rpy="1.5708 -1.56408e-16 -1.5708" />
+		<parent link="shoulder_axis_connector_nut_2" />
+		<child link="shoulder_axis_connector_screw_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="abductionShoulderR" type="revolute">
+		<origin xyz="0.027139 -0.03 -0.028" rpy="-1.5708 0.441338 1.25857e-14" />
+		<parent link="shoulder_vertical_bracket_right" />
+		<child link="shoulder_axis_connector_nut_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-2.87979" upper="-0.349066" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="FlexionShoulderR" type="revolute">
+		<origin xyz="0.0637154 -0.0655754 -0.102" rpy="3.14159 9.81694e-16 -0.918904" />
+		<parent link="clavicle_right" />
+		<child link="shoulder_vertical_bracket_right" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" lower="-1.0472" upper="0.645772" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="axial_rotation_connector">
+		<inertial>
+			<origin xyz="-0.04 3.85462e-08 -0.00760638" rpy="0 0 0" />
+			<mass value="0.0636609" />
+			<inertia ixx="4.44463e-05" ixy="-5.82628e-11" ixz="9.28844e-12" iyy="4.44463e-05" iyz="-6.91119e-12" izz="8.6595e-05" />
+		</inertial>
+	</link>
+	<link name="shoulder_axis_connector_screw_4">
+		<visual>
+			<origin xyz="0.0725049 0.005 -0.02608" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/shoulder_axis_connector_screw.stl" />
+			</geometry>
+			<material name="shoulder_axis_connector_screw_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for shoulder_axis_connector_screw -->
+		<inertial>
+			<origin xyz="1.35211e-17 0.0175878 -0.000375935" rpy="0 0 0" />
+			<mass value="0.00523579" />
+			<inertia ixx="9.21279e-08" ixy="-3.46184e-08" ixz="2.40754e-29" iyy="8.24043e-07" iyz="-1.93446e-15" izz="8.22084e-07" />
+		</inertial>
+	</link>
+	<joint name="ConnectorScrewConnectorNutLegL_passive" type="fixed">
+		<origin xyz="6.93889e-18 3.46945e-18 -0.021" rpy="-1.5708 8.14607e-21 1.5708" />
+		<parent link="base_link" />
+		<child link="shoulder_axis_connector_screw_4" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="RibcageToHipsR_passive" type="fixed">
+		<origin xyz="-0.0351003 0.004 0.05" rpy="-1.5708 1.09455e-09 -3.14159" />
+		<parent link="rib_cage_bottom_2" />
+		<child link="axial_rotation_connector" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<link name="rib_cage_middle_left">
+		<visual>
+			<origin xyz="0.124047 -1.00738e-07 -0.228" rpy="0 -0 -1.54919e-28" />
+			<geometry>
+				<mesh filename="package://delta/meshes/visual/rib_cage_middle_left.stl" />
+			</geometry>
+			<material name="rib_cage_middle_left_material">
+				<color rgba="0.901961 0.901961 0.901961 1.0" />
+			</material>
+		</visual>
+		<!-- Shapes for rib_cage_middle_left -->
+		<inertial>
+			<origin xyz="0.0476507 -0.00856864 -0.0779265" rpy="0 0 0" />
+			<mass value="0.302671" />
+			<inertia ixx="0.00126283" ixy="-1.60333e-05" ixz="1.73882e-05" iyy="0.000957431" iyz="-2.95105e-05" izz="0.00134097" />
+		</inertial>
+	</link>
+	<joint name="ribCageMiddleLeftRibCageBottom_passive" type="fixed">
+		<origin xyz="0.123921 -0.000673847 0.20701" rpy="3.14159 7.99228e-15 -3.14159" />
+		<parent link="rib_cage_bottom" />
+		<child link="rib_cage_middle_left" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<!-- Joints -->
+	<joint name="clavicleRightRibCageMiddleRight_passive" type="fixed">
+		<origin xyz="-0.00225612 0.0325963 -0.118" rpy="-8.83524e-29 -3.15544e-30 1.26085e-30" />
+		<parent link="rib_cage_middle_right" />
+		<child link="clavicle_right" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="ribCageMiddleRightRibCageBottom_passive" type="fixed">
+		<origin xyz="-0.119047 0.004 0.05" rpy="-1.5708 1.09455e-09 -3.14159" />
+		<parent link="rib_cage_bottom_2" />
+		<child link="rib_cage_middle_right" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="ribCageBottom_passive" type="fixed">
+		<origin xyz="-0.0051255 0.0493262 0.20301" rpy="1.5708 -6.88206e-15 1.0945e-09" />
+		<parent link="rib_cage_bottom" />
+		<child link="rib_cage_bottom_2" />
+		<axis xyz="0 0 1" />
+		<limit effort="1" velocity="20" />
+		<joint_properties friction="0.0" />
+	</joint>
+	<joint name="fixed_base" type="fixed">
+		<parent link="base_link" />
+		<child link="rib_cage_bottom" />
+		<origin xyz="0 0 0" rpy="0 0 0" />
+	</joint>
+</robot>

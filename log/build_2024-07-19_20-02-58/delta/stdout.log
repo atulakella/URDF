@@ -1,0 +1,37 @@
+running develop
+running egg_info
+creating delta.egg-info
+writing delta.egg-info/PKG-INFO
+writing dependency_links to delta.egg-info/dependency_links.txt
+writing entry points to delta.egg-info/entry_points.txt
+writing requirements to delta.egg-info/requires.txt
+writing top-level names to delta.egg-info/top_level.txt
+writing manifest file 'delta.egg-info/SOURCES.txt'
+reading manifest file 'delta.egg-info/SOURCES.txt'
+writing manifest file 'delta.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/debian/delta/install/delta/lib/python3.10/site-packages/delta.egg-link (link to .)
+
+Installed /home/debian/delta/build/delta
+running symlink_data
+creating /home/debian/delta/install/delta/share/ament_index
+creating /home/debian/delta/install/delta/share/ament_index/resource_index
+creating /home/debian/delta/install/delta/share/ament_index/resource_index/packages
+symbolically linking /home/debian/delta/build/delta/resource/delta -> /home/debian/delta/install/delta/share/ament_index/resource_index/packages
+symbolically linking /home/debian/delta/build/delta/package.xml -> /home/debian/delta/install/delta/share/delta
+symbolically linking /home/debian/delta/build/delta/launch/view_robot_launch.py -> /home/debian/delta/install/delta/share/delta
+creating /home/debian/delta/install/delta/share/delta/urdf
+symbolically linking /home/debian/delta/build/delta/urdf/planar_3dof.urdf -> /home/debian/delta/install/delta/share/delta/urdf/
+creating /home/debian/delta/install/delta/share/delta/rviz
+symbolically linking /home/debian/delta/build/delta/rviz/view.rviz -> /home/debian/delta/install/delta/share/delta/rviz/
+creating /home/debian/delta/install/delta/share/delta/meshes
+creating /home/debian/delta/install/delta/share/delta/meshes/collision
+symbolically linking /home/debian/delta/build/delta/meshes/collision/arm_link.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+symbolically linking /home/debian/delta/build/delta/meshes/collision/arm_link_twist_2.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+symbolically linking /home/debian/delta/build/delta/meshes/collision/gripper.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+symbolically linking /home/debian/delta/build/delta/meshes/collision/arm_link_twist_1.stl -> /home/debian/delta/install/delta/share/delta/meshes/collision/
+creating /home/debian/delta/install/delta/share/delta/meshes/visual
+symbolically linking /home/debian/delta/build/delta/meshes/visual/arm_link.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+symbolically linking /home/debian/delta/build/delta/meshes/visual/arm_link_twist_2.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+symbolically linking /home/debian/delta/build/delta/meshes/visual/gripper.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/
+symbolically linking /home/debian/delta/build/delta/meshes/visual/arm_link_twist_1.stl -> /home/debian/delta/install/delta/share/delta/meshes/visual/

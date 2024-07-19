@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing delta.egg-info/PKG-INFO
+writing dependency_links to delta.egg-info/dependency_links.txt
+writing entry points to delta.egg-info/entry_points.txt
+writing requirements to delta.egg-info/requires.txt
+writing top-level names to delta.egg-info/top_level.txt
+reading manifest file 'delta.egg-info/SOURCES.txt'
+writing manifest file 'delta.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/debian/URDF_for_delta/install/delta/lib/python3.10/site-packages/delta.egg-link (link to .)
+
+Installed /home/debian/URDF_for_delta/build/delta
+running symlink_data
+symbolically linking /home/debian/URDF_for_delta/build/delta/meshes/collision/A01-Face.stl -> /home/debian/URDF_for_delta/install/delta/share/delta/meshes/collision/
+symbolically linking /home/debian/URDF_for_delta/build/delta/meshes/visual/face_1.stl -> /home/debian/URDF_for_delta/install/delta/share/delta/meshes/visual/
