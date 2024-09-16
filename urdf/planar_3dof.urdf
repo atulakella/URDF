@@ -1057,7 +1057,7 @@
 		<parent link="shoulder_vertical_bracket_left" />
 		<child link="shoulder_axis_connector_nut" />
 		<axis xyz="0 0 1" />
-		<limit effort="1" velocity="20" lower="0.349066" upper="2.87979" />
+		<limit effort="1" velocity="20" lower="-0.724" upper="1.97979" />
 		<joint_properties friction="0.0" />
 	</joint>
 	<joint name="FlexionShoulderL" type="revolute">
@@ -2044,7 +2044,7 @@
 		<parent link="distal_lower_arm_2" />
 		<child link="hand_back_right" />
 		<axis xyz="0 0 1" />
-		<limit effort="1" velocity="20" lower="-0.174533" upper="0.523599" />
+		<limit effort="1" velocity="20" lower="-0.274533" upper="0.523599" />
 		<joint_properties friction="0.0" />
 	</joint>
 	<joint name="lowerArmCircumductionR" type="revolute">
@@ -2116,7 +2116,7 @@
 		<parent link="shoulder_vertical_bracket_right" />
 		<child link="shoulder_axis_connector_nut_2" />
 		<axis xyz="0 0 1" />
-		<limit effort="1" velocity="20" lower="-2.87979" upper="-0.349066" />
+		<limit effort="1" velocity="20" lower="0.568" upper="-0.949066" />
 		<joint_properties friction="0.0" />
 	</joint>
 	<joint name="FlexionShoulderR" type="revolute">
