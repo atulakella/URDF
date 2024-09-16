@@ -1,14 +1,19 @@
 # URDF_for_delta
 
-- compile the workspace
+Clean Build and Install Directories
 ```
-    colcon build --symlink-install
+rm -rf build install log
 ```
-- add to path the workspace
+- Build the workspace
 ```
-    . install/setup.bash
+colcon build --symlink-install
+```
+- Source the workspace
+```
+source /opt/ros/humble/setup.bash
+
 ```
 - run the launch file
 ```
-    ros2 launch delta view_robot_launch.py
+ros2 launch delta view_robot_launch.py
 ```
