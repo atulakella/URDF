@@ -2,7 +2,7 @@
 
 Clean Build and Install Directories
 ```
-rm -rf build install log
+rm -rf build/ install/ log/
 ```
 - Build the workspace
 ```
